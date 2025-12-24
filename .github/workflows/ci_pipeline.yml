@@ -26,11 +26,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 3. Siapkan Python (Lebih cepat daripada Conda)
-    - name: Set up Python 3.12
+    # 3. Siapkan Python (Ganti ke 3.11 agar kompatibel dengan Yellowbrick)
+    - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12'
+        python-version: '3.11'
 
     # 4. Install dependencies
     - name: Install dependencies

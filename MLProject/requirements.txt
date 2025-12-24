@@ -7,3 +7,4 @@ yellowbrick
 mlflow==2.19.0
 dagshub
 python-dotenv
+setuptools
