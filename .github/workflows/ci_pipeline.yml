@@ -44,4 +44,4 @@ jobs:
     - name: Run Training Script
       run: |
         cd MLProject
-        python modelling_tuning.py
+        python modelling.py

@@ -1,15 +1,17 @@
+name: mlsystem
 channels:
-- conda-forge
+  - defaults
 dependencies:
-- python=3.12.7
-- pip<=25.0
-- pip:
-  - mlflow==2.22.0
-  - cloudpickle==3.1.1
-  - numpy==2.1.3
-  - pandas==2.2.3
-  - psutil==5.9.0
-  - scikit-learn==1.6.1
-  - scipy==1.15.2
-  - seaborn==0.11.2
-name: mlflow-env
+  - python=3.12.7
+  - pip
+  - pip:
+    - mlflow==2.19.0
+    - scikit-learn==1.5.2   
+    - pandas
+    - numpy
+    - matplotlib 
+    - seaborn
+    - joblib
+    - yellowbrick
+    - dagshub
+    - python-dotenv
