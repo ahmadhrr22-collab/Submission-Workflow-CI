@@ -1,6 +1,4 @@
-name: Clustering_Project_AhmadHariri
-
-conda_env: conda.yaml
+name: Clustering_Project
 
 entry_points:
   main:

@@ -83,9 +83,6 @@ with mlflow.start_run():
     print("Contoh Data (Head):")
     print(df.head(2))
 
-    # --- PAKSA KONVERSI KE ANGKA ---
-    # Kadang angka terbaca sebagai string karena ada 1 nilai aneh. Kita paksa ubah.
-    # Kolom teks murni (seperti Nama/ID) akan berubah jadi NaN (kosong) dan kita buang.
     
     # Simpan nama kolom asli
     original_cols = df.columns.tolist()
@@ -243,7 +240,6 @@ with mlflow.start_run():
     joblib.dump(best_model, local_model_path)
     
     # 2. Log Model ke MLflow (Standard Format untuk Serving)
-    # Ini akan membuat folder 'model' di DagsHub yang berisi file yang dibutuhkan Kriteria 4
     mlflow.sklearn.log_model(
         sk_model=best_model,
         artifact_path="model",
